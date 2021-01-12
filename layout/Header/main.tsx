@@ -72,7 +72,7 @@ const HeaderComponent = () => {
           </div>
           <div>
             <span
-              className={"text-2xl text-teal-600 font-black dark:text-gray-500"}
+              className={"text-2xl text-gray-600 font-black dark:text-gray-500"}
             >
               SCHOOL COMMERCE
             </span>
@@ -121,31 +121,31 @@ const HeaderComponent = () => {
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-sm">HOME</span>
+              <span className=" text-sm">HOME</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-sm">SHOP</span>
+              <span className=" text-sm">SHOP</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-sm">CART</span>
+              <span className=" text-sm">CART</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-sm">CONTACT US</span>
+              <span className=" text-sm">CONTACT US</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-sm">ABOUT US</span>
+              <span className=" text-sm">ABOUT US</span>
             </a>
           </div>
         </div>
@@ -155,7 +155,7 @@ const HeaderComponent = () => {
           <div>
             <span
               className={
-                "font-extrabold uppercase dark:text-gray-500 text-teal-700"
+                "font-extrabold uppercase dark:text-gray-500 text-gray-700"
               }
             >
               School Commerce
