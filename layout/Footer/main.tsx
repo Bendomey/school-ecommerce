@@ -13,7 +13,7 @@ const FooterComponent = () => {
             <div className="px-5 py-2">
               <a
                 href="#"
-                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900"
+                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 About Us
               </a>
@@ -22,7 +22,7 @@ const FooterComponent = () => {
             <div className="px-5 py-2">
               <a
                 href="#"
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 Contact Us
               </a>
@@ -31,7 +31,7 @@ const FooterComponent = () => {
             <div className="px-5 py-2">
               <a
                 href="#"
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 Home
               </a>
@@ -40,7 +40,7 @@ const FooterComponent = () => {
             <div className="px-5 py-2">
               <a
                 href="#"
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 Shop
               </a>
@@ -49,7 +49,7 @@ const FooterComponent = () => {
             <div className="px-5 py-2">
               <a
                 href="#"
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 Privacy Policy
               </a>
@@ -58,7 +58,7 @@ const FooterComponent = () => {
             <div className="px-5 py-2">
               <a
                 href="#"
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 FAQs
               </a>
