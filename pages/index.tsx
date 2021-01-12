@@ -90,7 +90,7 @@ export default function Home() {
           <div className="px-2 sm:-px-2 md:px-0">
             <div className="px-6 py-6 bg-gray-100 dark:bg-gray-800 rounded-none md:py-12 md:px-12 lg:py-10 lg:px-16 xl:flex xl:items-center">
               <div className="xl:w-0 xl:flex-1">
-                <h2 className="text-1xl sm:text-1xl md:text-lg font-thin  text-center tracking-wider text-gray-600 dark:text-gray-400">
+                <h2 className="text-1xl sm:text-1xl md:text-lg font-light  text-center tracking-wider text-gray-600 dark:text-gray-400">
                   SUBSCRIBE TO RECEIVE OUR UPDATES
                 </h2>
               </div>
@@ -110,9 +110,9 @@ export default function Home() {
                   />
                   <button
                     type="submit"
-                    className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent shadow text-base font-medium rounded-none text-white bg-gray-600 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:w-auto sm:flex-shrink-0"
+                    className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent shadow text-sm tracking-wider font-light rounded-none text-white bg-gray-600 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white sm:mt-0 sm:w-auto sm:flex-shrink-0"
                   >
-                    Notify me
+                    SUBSCRIBE
                   </button>
                 </form>
               </div>

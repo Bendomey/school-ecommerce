@@ -17,13 +17,18 @@ const ProductComponentInGrid: React.FC<Props> = ({ data }) => {
         <div
           onMouseEnter={() => setHoverEffect(true)}
           onMouseLeave={() => setHoverEffect(false)}
-          className={"bg-gray-50 dark:bg-gray-800  mb-3 w-full relative"}
+          className={" mb-3 w-full relative"}
         >
-          <img src={data?.image} alt="" />
+          {/* bg-gray-50 dark:bg-gray-800  */}
+          <img
+            src={data?.image}
+            style={{ width: "90%", height: "90%" }}
+            alt=""
+          />
           {/* for discounts */}
           {data?.discount && (
             <div className={"absolute top-4 right-4"}>
-              <div className={"bg-yellow-400 text-white p-1 text-sm"}>
+              <div className={"bg-yellow-400 text-white px-1 py-2 text-sm"}>
                 {data?.discount}% DISCOUNT
               </div>
             </div>
@@ -37,7 +42,7 @@ const ProductComponentInGrid: React.FC<Props> = ({ data }) => {
             >
               <span
                 className={
-                  "uppercase dark:text-white text-center text-xs font-extrabold"
+                  "uppercase text-gray-600 dark:text-white text-center text-xs font-bold"
                 }
               >
                 out of stock
@@ -78,7 +83,7 @@ const ProductComponentInGrid: React.FC<Props> = ({ data }) => {
               >
                 <span
                   className={
-                    "uppercase tracking-wider text-center text-xs font-extrabold text-white flex justify-center"
+                    "uppercase tracking-wider text-center text-xs font-light text-white flex justify-center"
                   }
                 >
                   quick view
@@ -91,7 +96,7 @@ const ProductComponentInGrid: React.FC<Props> = ({ data }) => {
           <span className={"font-thin text-sm text-gray-400"}>
             {data?.name}
           </span>
-          <span className={"text-gray-900 mt-1 font-extrabold dark:text-white"}>
+          <span className={"text-gray-900 mt-1 font-semibold dark:text-white"}>
             {data?.discount && (
               <React.Fragment>
                 <span className={"line-through text-gray-600 text-sm"}>

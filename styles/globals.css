@@ -22,7 +22,7 @@ body {
 /* fonts here */
 
 @font-face {
-  font-family: 'Raleway Regular';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   src: local('Raleway Regular'), url(/fonts/Raleway-Regular.woff) format('woff');
@@ -38,7 +38,7 @@ body {
   
 
   @font-face {
-  font-family: 'Raleway Thin';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 100;
   src: local('Raleway Thin'), url(/fonts/Raleway-Thin.woff) format('woff');
@@ -46,7 +46,7 @@ body {
   
 
   @font-face {
-  font-family: 'Raleway ExtraLight';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 200;
   src: local('Raleway ExtraLight'), url(/fonts/Raleway-ExtraLight.woff) format('woff');
@@ -54,14 +54,14 @@ body {
   
 
   @font-face {
-  font-family: 'Raleway Light';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
   src: local('Raleway Light'), url(/fonts/Raleway-Light.woff) format('woff');
   }
 
   @font-face {
-  font-family: 'Raleway Medium';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   src: local('Raleway Medium'), url(/fonts/Raleway-Medium.woff) format('woff');
@@ -69,7 +69,7 @@ body {
   
 
   @font-face {
-  font-family: 'Raleway SemiBold';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 600;
   src: local('Raleway SemiBold'), url(/fonts/Raleway-SemiBold.woff) format('woff');
@@ -77,7 +77,7 @@ body {
   
 
   @font-face {
-  font-family: 'Raleway Bold';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   src: local('Raleway Bold'), url(/fonts/Raleway-Bold.woff) format('woff');
@@ -86,7 +86,7 @@ body {
   
 
   @font-face {
-  font-family: 'Raleway ExtraBold';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   src: local('Raleway ExtraBold'), url(/fonts/Raleway-ExtraBold.woff) format('woff');
@@ -95,7 +95,7 @@ body {
 
 
   @font-face {
-  font-family: 'Raleway Black';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 900;
   src: local('Raleway Black'), url(/fonts/Raleway-Black.woff) format('woff');

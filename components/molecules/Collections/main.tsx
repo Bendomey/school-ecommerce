@@ -9,7 +9,11 @@ const data = [
     price: 108,
     discount: null,
     stock: 10,
-    image: "http://deothemes.com/envato/aha/shop/img/shop/shop_item_1.jpg",
+    image:
+      "https://d3re0f381bckq9.cloudfront.net/30388078_img-20160810-wa019_758x1024.jpg",
+    // image:
+    //   "https://cdn.shopify.com/s/files/1/0004/9414/1503/products/255713-1_1200x1200.jpg?v=1592993337",
+    // image: "http://deothemes.com/envato/aha/shop/img/shop/shop_item_1.jpg",
   },
   {
     _id: 2,
@@ -17,7 +21,10 @@ const data = [
     price: 128,
     discount: null,
     stock: 0,
-    image: "http://deothemes.com/envato/aha/shop/img/shop/shop_item_2.jpg",
+    image:
+      "https://d3re0f381bckq9.cloudfront.net/30388078_img-20160810-wa019_758x1024.jpg",
+    // image:
+    //   "https://images-na.ssl-images-amazon.com/images/I/61UVAeR34sL._AC_UX385_.jpg",
   },
   {
     _id: 3,
@@ -25,7 +32,8 @@ const data = [
     price: 148,
     discount: 10,
     stock: 10,
-    image: "http://deothemes.com/envato/aha/shop/img/shop/shop_item_3.jpg",
+    image:
+      "https://d3re0f381bckq9.cloudfront.net/30388078_img-20160810-wa019_758x1024.jpg",
   },
   {
     _id: 4,
@@ -33,7 +41,9 @@ const data = [
     price: 18,
     discount: null,
     stock: 10,
-    image: "http://deothemes.com/envato/aha/shop/img/shop/shop_item_4.jpg",
+    image:
+      "https://d3re0f381bckq9.cloudfront.net/30388078_img-20160810-wa019_758x1024.jpg",
+    // image: "http://deothemes.com/envato/aha/shop/img/shop/shop_item_4.jpg",
   },
 ];
 
