@@ -1,0 +1,109 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+.sliderContainer {
+    position: relative;
+  height: 70vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dotContainer {
+    position: absolute;
+    z-index: 1;
+    bottom: 10vh;
+    left: 17vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.customOnlineText {
+  line-height: 4vh;
+  width: 10vw;
+}
+
+.homeCarouselContainer {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position:6%;
+    opacity: 1;
+    visibility: inherit;
+  }
+
+  @media (min-width: 1281px) {
+    
+  }
+  
+  /* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+   
+  }
+  
+  /* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+   
+  }
+  
+  /* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+  }
+  
+  /* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+   
+  }
+  
+  /* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .homeCarouselContainer {
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .dotContainer {
+        bottom: 2vh;
+        left: 11vw;
+    }
+
+    .customOnlineText {
+      line-height: 3vh;
+    }
+
+
+.sliderContainer {
+  position: relative;
+height: 50vh;
+width: 100%;
+margin: 0 auto;
+overflow: hidden;
+white-space: nowrap;
+}
+  }
+  

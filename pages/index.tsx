@@ -3,6 +3,42 @@ import { Fragment } from "react";
 import Layout, { siteTitle } from "../layout";
 import { ClipLoader } from "react-spinners";
 import dynamic from "next/dynamic";
+import SliderComponent from "../components/molecules/Slider";
+const images: {
+  head: string;
+  body: string;
+  slide: string;
+  showButton: boolean;
+}[] = [
+  {
+    slide: "http://deothemes.com/envato/aha/shop/img/slider/1.jpg",
+    head: "WELCOME TO TECHTIONERY",
+    body: "WE ARE HAPPY TO HAVE YOU ",
+    showButton: false,
+  },
+  {
+    slide: "http://deothemes.com/envato/aha/shop/img/slider/2.jpg",
+    head: "HAPPY SUMMER COMBO SUPER",
+    body: "COOL UP TO 40% OFF",
+    showButton: true,
+  },
+  {
+    slide: "http://deothemes.com/envato/aha/shop/img/slider/3.jpg",
+    head: "SCANDINAVIAN COLLECTION",
+    body: "FOR YOUR BEDROOM JUST $599",
+    showButton: true,
+  },
+];
+
+const SliderComponentBasic = () => {
+  return (
+    <Fragment>
+      <div className={"w-full md:h-full bg-red-500"}>
+        <SliderComponent slides={images} />
+      </div>
+    </Fragment>
+  );
+};
 
 //for Collections
 const CollectionsComponent = dynamic(
@@ -40,6 +76,11 @@ export default function Home() {
 
       <Layout>
         <Fragment>
+          {/* for slider */}
+          <div>
+            <SliderComponentBasic />
+          </div>
+
           {/* for New Arrivals */}
           <div className="px-2 sm:-px-2 md:px-0">
             <CollectionsComponent name={"New Arrivals"} />
