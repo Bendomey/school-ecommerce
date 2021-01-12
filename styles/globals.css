@@ -1,16 +1,102 @@
+@import url("https://rsms.me/inter/inter.css");
+
+*,
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Raleway";
+  scroll-behavior: smooth;
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+#nprogress .bar {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #0AC9D0 !important;
+  border: 1px solid #0AC9D0
+  }
 
-* {
-  box-sizing: border-box;
-}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* fonts here */
+
+@font-face {
+  font-family: 'Raleway Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway Regular'), url(/fonts/Raleway-Regular.woff) format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(/fonts/Raleway-Regular.woff) format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Raleway Thin';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), url(/fonts/Raleway-Thin.woff) format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Raleway ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), url(/fonts/Raleway-ExtraLight.woff) format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Raleway Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), url(/fonts/Raleway-Light.woff) format('woff');
+  }
+
+  @font-face {
+  font-family: 'Raleway Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), url(/fonts/Raleway-Medium.woff) format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Raleway SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), url(/fonts/Raleway-SemiBold.woff) format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Raleway Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), url(/fonts/Raleway-Bold.woff) format('woff');
+  }
+  
+  
+
+  @font-face {
+  font-family: 'Raleway ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), url(/fonts/Raleway-ExtraBold.woff) format('woff');
+  }
+  
+
+
+  @font-face {
+  font-family: 'Raleway Black';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Raleway Black'), url(/fonts/Raleway-Black.woff) format('woff');
+  }
