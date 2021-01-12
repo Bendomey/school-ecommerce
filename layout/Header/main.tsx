@@ -18,7 +18,7 @@ const HeaderComponent = () => {
       <div className={`sticky bg-white dark:bg-gray-900 top-0 z-10 `}>
         <div
           className={`${
-            initialScrollPositionMoved ? " py-2 " : "py-10"
+            initialScrollPositionMoved ? " py-3 " : "py-10"
           } hidden sm:hidden md:flex border-b border-gray-100 dark:border-gray-800 flex-row items-center justify-between`}
         >
           <div>
@@ -103,31 +103,31 @@ const HeaderComponent = () => {
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-xs">HOME</span>
+              <span className="font-light text-sm">HOME</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-xs">SHOP</span>
+              <span className="font-light text-sm">SHOP</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-xs">CART</span>
+              <span className="font-light text-sm">CART</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-xs">CONTACT US</span>
+              <span className="font-light text-sm">CONTACT US</span>
             </a>
             <a
               href="#"
               className="text-gray-600 dark:text-gray-300 dark:hover:text-teal-600 hover:text-teal-600"
             >
-              <span className="font-light text-xs">ABOUT US</span>
+              <span className="font-light text-sm">ABOUT US</span>
             </a>
           </div>
         </div>
