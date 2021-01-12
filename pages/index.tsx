@@ -4,6 +4,7 @@ import Layout, { siteTitle } from "../layout";
 import { ClipLoader } from "react-spinners";
 import dynamic from "next/dynamic";
 import SliderComponent from "../components/molecules/Slider";
+
 const images: {
   head: string;
   body: string;
@@ -40,9 +41,63 @@ const SliderComponentBasic = () => {
   );
 };
 
+//for logo clouds
+const LogoCloudsComponent = dynamic(
+  () => import("../components/molecules/logoCloud"),
+  {
+    ssr: false,
+    loading: ({ isLoading, error, retry }) => {
+      if (isLoading) {
+        return (
+          <div className={"w-full flex justify-center items-center"}>
+            <ClipLoader color={"#02A68F"} size={20} />
+          </div>
+        );
+      }
+      if (error) {
+        return (
+          <Fragment>
+            <div className={"w-full flex flex-col justify-center items-center"}>
+              <p>Oops, something happened</p>
+              <button onClick={retry}>click to try reloading</button>
+            </div>
+          </Fragment>
+        );
+      }
+    },
+  }
+);
+
 //for Collections
 const CollectionsComponent = dynamic(
   () => import("../components/molecules/Collections"),
+  {
+    ssr: false,
+    loading: ({ isLoading, error, retry }) => {
+      if (isLoading) {
+        return (
+          <div className={"w-full flex justify-center items-center"}>
+            <ClipLoader color={"#0AC9D0"} size={20} />
+          </div>
+        );
+      }
+      if (error) {
+        return (
+          <Fragment>
+            <div className={"w-full flex flex-col justify-center items-center"}>
+              <p>Oops, something happened</p>
+              <button onClick={retry}>click to try reloading</button>
+            </div>
+          </Fragment>
+        );
+      }
+    },
+  }
+);
+
+//for category courses
+const CategoriesComponent = dynamic(
+  () => import("../components/molecules/categories"),
   {
     ssr: false,
     loading: ({ isLoading, error, retry }) => {
@@ -79,6 +134,11 @@ export default function Home() {
           {/* for slider */}
           <div className="px-2 sm:-px-2 md:px-0">
             <SliderComponentBasic />
+          </div>
+
+          {/* for schools */}
+          <div className={"pt-5 px-2 sm:-px-2 md:px-0"}>
+            <LogoCloudsComponent />
           </div>
 
           {/* for New Arrivals */}
@@ -122,6 +182,23 @@ export default function Home() {
           {/* for best sellers */}
           <div className="px-2 sm:-px-2 md:px-0">
             <CollectionsComponent name={"Best Sellers"} />
+          </div>
+
+          {/* Our courses section */}
+          <div className={"pb-10 px-2 sm:px-2 md:px-0"}>
+            <div className={"flex flex-col justify-center items-center"}>
+              <p className="mt-2  text-black dark:text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Our Categories
+              </p>
+              <div className={"md:w-1/2 mb-2"}>
+                <p className="mt-3 text-lg text-center font-thin text-gray-500 dark:text-gray-100">
+                  Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                  ultrices
+                </p>
+              </div>
+            </div>
+            <CategoriesComponent />
           </div>
         </Fragment>
       </Layout>
