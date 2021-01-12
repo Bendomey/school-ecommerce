@@ -5,7 +5,7 @@ const FooterComponent = () => {
   return (
     <React.Fragment>
       <footer className="">
-        <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto border-t border-gray-100 dark:border-gray-800 py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
           <nav
             className="-mx-5 -my-2 flex flex-wrap justify-center"
             aria-label="Footer"

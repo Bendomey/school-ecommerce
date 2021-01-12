@@ -1,6 +1,35 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import Layout, { siteTitle } from "../layout";
+import { ClipLoader } from "react-spinners";
+import dynamic from "next/dynamic";
+
+//for Collections
+const CollectionsComponent = dynamic(
+  () => import("../components/molecules/Collections"),
+  {
+    ssr: false,
+    loading: ({ isLoading, error, retry }) => {
+      if (isLoading) {
+        return (
+          <div className={"w-full flex justify-center items-center"}>
+            <ClipLoader color={"#0AC9D0"} size={20} />
+          </div>
+        );
+      }
+      if (error) {
+        return (
+          <Fragment>
+            <div className={"w-full flex flex-col justify-center items-center"}>
+              <p>Oops, something happened</p>
+              <button onClick={retry}>click to try reloading</button>
+            </div>
+          </Fragment>
+        );
+      }
+    },
+  }
+);
 
 export default function Home() {
   return (
@@ -11,9 +40,13 @@ export default function Home() {
 
       <Layout>
         <Fragment>
-          {/* for newsletter */}
+          {/* for New Arrivals */}
+          <div className="px-2 sm:-px-2 md:px-0">
+            <CollectionsComponent name={"New Arrivals"} />
+          </div>
 
-          <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+          {/* for newsletter */}
+          <div className="px-2 sm:-px-2 md:px-0">
             <div className="px-6 py-6 bg-gray-100 dark:bg-gray-800 rounded-none md:py-12 md:px-12 lg:py-10 lg:px-16 xl:flex xl:items-center">
               <div className="xl:w-0 xl:flex-1">
                 <h2 className="text-1xl sm:text-1xl md:text-lg font-thin  text-center tracking-wider text-gray-600 dark:text-gray-400">
@@ -43,6 +76,11 @@ export default function Home() {
                 </form>
               </div>
             </div>
+          </div>
+
+          {/* for best sellers */}
+          <div className="px-2 sm:-px-2 md:px-0">
+            <CollectionsComponent name={"Best Sellers"} />
           </div>
         </Fragment>
       </Layout>
