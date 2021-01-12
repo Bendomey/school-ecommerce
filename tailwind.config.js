@@ -1,5 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-
+const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.tsx", "./src/**/*.jsx"],
   darkMode: "class", // or 'media' or 'class'
@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Raleway", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        teal: colors.teal,
       },
     },
   },
