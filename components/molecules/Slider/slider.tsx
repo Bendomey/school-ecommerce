@@ -123,7 +123,7 @@ const Slider: FC<SliderProp> = ({
                 <a
                   // data-aos={"fade-up"}
                   className={
-                    " bg-teal-900 hover:bg-teal-600 text-white sm:text-teal-600 md:text-white px-5 py-2 rounded-sm hover:text-white hover:border-secondary cursor-pointer"
+                    " bg-white hover:bg-teal-600 text-teal-800 sm:text-teal-600 md:text-teal-800 px-10 py-4 rounded-none hover:text-white hover:border-secondary cursor-pointer"
                   }
                 >
                   Shop Now

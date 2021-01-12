@@ -12,9 +12,9 @@ const images: {
 }[] = [
   {
     slide: "http://deothemes.com/envato/aha/shop/img/slider/1.jpg",
-    head: "WELCOME TO TECHTIONERY",
+    head: "WELCOME TO SCHOOL COMMERCE",
     body: "WE ARE HAPPY TO HAVE YOU ",
-    showButton: false,
+    showButton: true,
   },
   {
     slide: "http://deothemes.com/envato/aha/shop/img/slider/2.jpg",
