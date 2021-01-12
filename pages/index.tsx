@@ -137,7 +137,11 @@ export default function Home() {
           </div>
 
           {/* for schools */}
-          <div className={"pt-5 px-2 sm:-px-2 md:px-0"}>
+          <div
+            className={
+              "pt-5 px-10 sm:-px-2 w-12/12 sm:w-12/12 md:w-full md:px-0"
+            }
+          >
             <LogoCloudsComponent />
           </div>
 
